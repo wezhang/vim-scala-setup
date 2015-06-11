@@ -270,6 +270,16 @@ set runtimepath^=~/.vim/bundle/vim-node
 
 " tern.vim
 let g:is_show_argument_hints_enabled = 1
+"let g:tern_map_keys=1
+nnoremap <buffer> <c-\>d :TernDoc<CR>
+nnoremap <buffer> <c-\>b :TernDocBrowse<CR>
+nnoremap <buffer> <c-\>t :TernType<CR>
+nnoremap <buffer> <c-\>d :TernDef<CR>
+nnoremap <buffer> <c-\>pd :TernDefPreview<CR>
+nnoremap <buffer> <c-\>sd :TernDefSplit<CR>
+nnoremap <buffer> <c-\>td :TernDefTab<CR>
+nnoremap <buffer> <c-\>r :TernRefs<CR>
+nnoremap <buffer> <c-\>R :TernRename<CR>
 
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
