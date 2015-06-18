@@ -6,13 +6,8 @@ syntax on
 "filetype plugin indent on
 
 set encoding=utf-8
-set guifont=PowerlineSymbols:h12
+set guifont=Monaco:h12
 set laststatus=2
-
-" powerline
-"let g:Powerline_symbols = 'fancy'
-"set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim/
-"call vam#ActivateAddons(['powerline'])
 
 " ctags
 set tags=tags;/
