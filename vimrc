@@ -6,10 +6,13 @@ syntax on
 "filetype plugin indent on
 
 set encoding=utf-8
-let g:Powerline_symbols = 'fancy'
-set guifont=Monaco:h12
-set rtp+=/usr/local/lib/python2.7/dist-packages/Powerline-beta-py2.7.egg/powerline/bindings/vim/
+set guifont=PowerlineSymbols:h12
 set laststatus=2
+
+" powerline
+let g:Powerline_symbols = 'fancy'
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim/
+"call vam#ActivateAddons(['powerline'])
 
 " ctags
 set tags=tags;/
@@ -332,8 +335,10 @@ set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
+
+let g:syntastic_javascript_checkers = ['jshint']
 
 " Node vim
 autocmd User Node if &filetype == "javascript" | setlocal expandtab | endif
