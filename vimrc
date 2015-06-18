@@ -10,8 +10,8 @@ set guifont=PowerlineSymbols:h12
 set laststatus=2
 
 " powerline
-let g:Powerline_symbols = 'fancy'
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim/
+"let g:Powerline_symbols = 'fancy'
+"set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim/
 "call vam#ActivateAddons(['powerline'])
 
 " ctags
