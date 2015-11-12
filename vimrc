@@ -341,3 +341,6 @@ autocmd User Node if &filetype == "javascript" | setlocal expandtab | endif
 
 nmap <leader>' cs"'
 nmap <leader>" cs'"
+
+" Markdown
+let g:vim_markdown_folding_disabled=1
